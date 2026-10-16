@@ -1,0 +1,75 @@
+{
+  "ticket_id": "cea4fd9b84724f1396cbeb9ea7533eaa",
+  "job": {
+    "id": "d24188d572c64892b8b71a24aa6b8104",
+    "ticket_id": "cea4fd9b84724f1396cbeb9ea7533eaa",
+    "revision": 1,
+    "status": "succeeded",
+    "stage": "Siap diperiksa",
+    "attempts": 1,
+    "error": null,
+    "created_at": "2026-10-16T03:46:41.445367+00:00"
+  },
+  "analysis": {
+    "category": "barang_rusak",
+    "score": 0.7036,
+    "calibration": "sigmoid",
+    "needs_review": true,
+    "classifier_version": "tfidf-bootstrap-v1",
+    "source": "inference",
+    "suggested_team": "retur",
+    "top_classes": [
+      {
+        "category": "barang_rusak",
+        "score": 0.7036
+      },
+      {
+        "category": "retur_refund",
+        "score": 0.2821
+      },
+      {
+        "category": "barang_tidak_sesuai",
+        "score": 0.0086
+      }
+    ],
+    "latency_ms": 3168,
+    "suggested_priority": "P2",
+    "priority_reason": "Keluhan barang atau retur memerlukan pemeriksaan tim retur."
+  },
+  "draft": {
+    "id": "47b4911e505c41199cb2ef9856f01efc",
+    "ticket_id": "cea4fd9b84724f1396cbeb9ea7533eaa",
+    "revision": 1,
+    "body": "Terima kasih telah menghubungi kami. Kami menerima laporan bahwa dua gelas dalam pesanan Anda pecah dan kardusnya penyok. Berdasarkan kebijakan POL-RUSAK-02:v1, laporan kerusakan harus diajukan paling lambat tujuh hari setelah barang diterima. Karena tanggal penerimaan belum diketahui, kami memerlukan informasi tambahan: 1) Tanggal penerimaan barang, 2) Foto kerusakan yang jelas (sesuai POL-RUSAK-01:v1). Kami tidak akan memproses retur sampai bukti ini diverifikasi. Silakan kirimkan informasi tersebut untuk melanjutkan pemeriksaan. Terima kasih atas kerjasama Anda.",
+    "source": "ollama",
+    "policy_refs": [
+      {
+        "id": "POL-RUSAK-02",
+        "version": 1,
+        "title": "Batas pelaporan kerusakan",
+        "body": "Dalam kebijakan toko simulasi ini, laporan kerusakan diajukan paling lambat tujuh hari setelah barang diterima. Jika tanggal penerimaan belum diketahui, minta informasi tambahan."
+      },
+      {
+        "id": "POL-RUSAK-01",
+        "version": 1,
+        "title": "Laporan barang rusak",
+        "body": "Minta foto kerusakan, kemasan, dan nomor pesanan. Operator memeriksa bukti sebelum menyetujui retur. Jangan menyatakan pengembalian dana sudah diproses."
+      },
+      {
+        "id": "POL-RUSAK-03",
+        "version": 1,
+        "title": "Keputusan penanganan kerusakan",
+        "body": "Tim retur memeriksa apakah penggantian atau pengembalian sesuai kebijakan. Draf hanya menjelaskan langkah pemeriksaan dan tidak menyetujui transaksi."
+      }
+    ],
+    "missing_information": [],
+    "review_flags": [],
+    "status": "draft",
+    "version": 1,
+    "model_version": "qwen3:4b",
+    "created_at": "2026-10-16T03:47:42.219803+00:00"
+  },
+  "elapsed_seconds": 61.69,
+  "real_llm": true,
+  "synthetic_input": true
+}

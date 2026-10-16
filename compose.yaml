@@ -1,0 +1,47 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ticketops
+      POSTGRES_USER: ticketops
+      POSTGRES_PASSWORD: ${TICKETOPS_POSTGRES_PASSWORD:-ticketops}
+    volumes: ["postgres-data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ticketops"]
+      interval: 3s
+      retries: 20
+  api:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    environment: &backend-env
+      TICKETOPS_DATABASE_URL: postgresql+psycopg://ticketops:${TICKETOPS_POSTGRES_PASSWORD:-ticketops}@db:5432/ticketops
+      TICKETOPS_OLLAMA_URL: http://host.docker.internal:11434
+      TICKETOPS_OLLAMA_MODEL: qwen3:4b
+      TICKETOPS_ALLOWED_ORIGINS: http://localhost:5178,http://127.0.0.1:5178
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    volumes: ["./ml/artifacts:/app/ml/artifacts:ro"]
+    depends_on: { db: { condition: service_healthy } }
+    ports: ["127.0.0.1:8018:8018"]
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8018/api/v1/health')",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  worker:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    command: ["python", "-m", "ticketops.worker"]
+    environment: *backend-env
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    volumes: ["./ml/artifacts:/app/ml/artifacts:ro"]
+    depends_on: { api: { condition: service_healthy } }
+  frontend:
+    build: { context: ., dockerfile: frontend/Dockerfile }
+    ports: ["127.0.0.1:5178:80"]
+    depends_on: [api]
+volumes:
+  postgres-data:

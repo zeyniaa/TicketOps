@@ -1,0 +1,1526 @@
+{
+  "tickets": [
+    {
+      "id": "a0171307577245689494a3b71b049f17",
+      "number": 1040,
+      "subject": "Paket belum sampai melewati estimasi",
+      "message": "Pesanan saya seharusnya sampai tiga hari lalu, tapi belum ada kabar. Bisa tolong cek posisi paketnya?",
+      "customer": "Alya Safitri",
+      "order_code": "DEMO-1003",
+      "status": "baru",
+      "category": "status_pengiriman",
+      "team": "logistik",
+      "priority": "P1",
+      "revision": 1,
+      "created_at": "2026-10-15T20:30:54.471570+00:00",
+      "updated_at": "2026-10-16T03:30:54.471570+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "status_pengiriman",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "logistik",
+        "suggested_priority": "P1",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "5e1e3564e9564243b0049946afb66394",
+          "ticket_id": "a0171307577245689494a3b71b049f17",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Periksa nomor pesanan dan status pengiriman sebelum menjawab. Bila nomor pesanan belum tersedia, minta nomor pesanan. Jangan mengarang nomor resi atau posisi paket. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-KIRIM-01",
+              "version": 1,
+              "title": "Lacak perjalanan pesanan",
+              "body": "Periksa nomor pesanan dan status pengiriman sebelum menjawab. Bila nomor pesanan belum tersedia, minta nomor pesanan. Jangan mengarang nomor resi atau posisi paket."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "draft",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.473319+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "fb9a9dffd552468da4700bc68825aaf2",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.473319+00:00"
+        }
+      ],
+      "order": {
+        "simulated": true,
+        "status": "shipping",
+        "payment_status": "paid",
+        "overdue_hours": 72,
+        "item": "Pesanan contoh 3"
+      }
+    },
+    {
+      "id": "ab211ff38d35401aa2cb04dbc076698d",
+      "number": 1041,
+      "subject": "Pembayaran terpotong, pesanan masih gagal",
+      "message": "Saldo saya sudah terpotong untuk pesanan ini, tetapi di aplikasi tertulis pesanan gagal. Mohon bantu cek ya.",
+      "customer": "Rizky Pratama",
+      "order_code": "DEMO-1002",
+      "status": "baru",
+      "category": "pembayaran",
+      "team": "billing",
+      "priority": "P1",
+      "revision": 1,
+      "created_at": "2026-10-15T23:30:54.469493+00:00",
+      "updated_at": "2026-10-16T03:30:54.470038+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "pembayaran",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "billing",
+        "suggested_priority": "P1",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "d7caf90e3ea54b449f9d48d5d539cbc3",
+          "ticket_id": "ab211ff38d35401aa2cb04dbc076698d",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Jika data pesanan simulasi membuktikan dana terpotong dan status pesanan gagal, tandai prioritas P1 untuk billing. Minta nomor pesanan dan referensi transaksi yang sudah disamarkan. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-BAYAR-01",
+              "version": 1,
+              "title": "Dana terpotong, pesanan gagal",
+              "body": "Jika data pesanan simulasi membuktikan dana terpotong dan status pesanan gagal, tandai prioritas P1 untuk billing. Minta nomor pesanan dan referensi transaksi yang sudah disamarkan."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "draft",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.471570+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "ee05631ff698455095a93df323220e55",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.471570+00:00"
+        }
+      ],
+      "order": {
+        "simulated": true,
+        "status": "failed",
+        "payment_status": "charged",
+        "overdue_hours": 0,
+        "item": "Pesanan contoh 2"
+      }
+    },
+    {
+      "id": "89d672e986b84add86650989df7eeae0",
+      "number": 1034,
+      "subject": "Barang kurang satu item",
+      "message": "Dalam satu paket seharusnya ada tiga kaus, tetapi saya hanya menerima dua. Mohon diperiksa.",
+      "customer": "Intan Permata",
+      "order_code": null,
+      "status": "ditinjau",
+      "category": "barang_tidak_sesuai",
+      "team": "retur",
+      "priority": "P2",
+      "revision": 1,
+      "created_at": "2026-10-15T02:30:54.484771+00:00",
+      "updated_at": "2026-10-16T03:30:54.485561+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "barang_tidak_sesuai",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "retur",
+        "suggested_priority": "P2",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "b81bb82b8974459e999a87f4762acb33",
+          "ticket_id": "89d672e986b84add86650989df7eeae0",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Minta foto barang, label kemasan, dan rincian barang yang dipesan. Cocokkan warna, ukuran, serta jumlah dengan data pesanan sebelum menilai ketidaksesuaian. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-SESUAI-01",
+              "version": 1,
+              "title": "Varian atau barang berbeda",
+              "body": "Minta foto barang, label kemasan, dan rincian barang yang dipesan. Cocokkan warna, ukuran, serta jumlah dengan data pesanan sebelum menilai ketidaksesuaian."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "draft",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.487563+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "a8c17ea17a4042c0a6a386edb159f152",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.487563+00:00"
+        }
+      ],
+      "order": null
+    },
+    {
+      "id": "bf4961218dca43c3902bb137f242cf24",
+      "number": 1038,
+      "subject": "Menanyakan status refund",
+      "message": "Permintaan retur saya sudah diperiksa. Bagaimana cara mengecek status pengembalian dananya?",
+      "customer": "Sinta Dewi",
+      "order_code": "DEMO-1005",
+      "status": "disetujui",
+      "category": "retur_refund",
+      "team": "retur",
+      "priority": "P2",
+      "revision": 1,
+      "created_at": "2026-10-15T14:30:54.475718+00:00",
+      "updated_at": "2026-10-16T03:30:54.475718+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "retur_refund",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "retur",
+        "suggested_priority": "P2",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "e18e18664cad43e99fec562e197558a0",
+          "ticket_id": "bf4961218dca43c3902bb137f242cf24",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Minta nomor pesanan, alasan retur, dan kondisi barang. Tim retur akan memeriksa kelayakan permintaan berdasarkan bukti dan kebijakan toko simulasi. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-RETUR-01",
+              "version": 1,
+              "title": "Persyaratan pengajuan retur",
+              "body": "Minta nomor pesanan, alasan retur, dan kondisi barang. Tim retur akan memeriksa kelayakan permintaan berdasarkan bukti dan kebijakan toko simulasi."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "approved",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.476341+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "bd3be779a7dd412484a388776a69eb38",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.476341+00:00"
+        }
+      ],
+      "order": {
+        "simulated": true,
+        "status": "delivered",
+        "payment_status": "paid",
+        "overdue_hours": 0,
+        "item": "Pesanan contoh 5"
+      }
+    },
+    {
+      "id": "0ee0ae90169840bca11e90613ef3ef46",
+      "number": 1039,
+      "subject": "Warna sepatu berbeda dengan pesanan",
+      "message": "Saya pesan sepatu hitam ukuran 42, yang datang malah putih ukuran 40. Saya ingin menukar barangnya.",
+      "customer": "Dimas Saputra",
+      "order_code": "DEMO-1004",
+      "status": "ditinjau",
+      "category": "barang_tidak_sesuai",
+      "team": "retur",
+      "priority": "P2",
+      "revision": 1,
+      "created_at": "2026-10-15T17:30:54.473319+00:00",
+      "updated_at": "2026-10-16T03:30:54.473319+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "barang_tidak_sesuai",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "retur",
+        "suggested_priority": "P2",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "4b844b710c164efbba53f200bc389a81",
+          "ticket_id": "0ee0ae90169840bca11e90613ef3ef46",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Minta foto barang, label kemasan, dan rincian barang yang dipesan. Cocokkan warna, ukuran, serta jumlah dengan data pesanan sebelum menilai ketidaksesuaian. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-SESUAI-01",
+              "version": 1,
+              "title": "Varian atau barang berbeda",
+              "body": "Minta foto barang, label kemasan, dan rincian barang yang dipesan. Cocokkan warna, ukuran, serta jumlah dengan data pesanan sebelum menilai ketidaksesuaian."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "draft",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.475718+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "9a048a194ba4477c8f140499e4ba19da",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.475718+00:00"
+        }
+      ],
+      "order": {
+        "simulated": true,
+        "status": "delivered",
+        "payment_status": "paid",
+        "overdue_hours": 0,
+        "item": "Pesanan contoh 4"
+      }
+    },
+    {
+      "id": "9655646b3053478aa6c7bc788bd670c8",
+      "number": 1042,
+      "subject": "Barang datang pecah, ingin mengajukan retur",
+      "message": "Halo kak, paket gelas saya sudah sampai tapi dua gelasnya pecah. Kemasan luar juga penyok. Bisa bantu proses retur?",
+      "customer": "Nadia Putri",
+      "order_code": "DEMO-1001",
+      "status": "ditinjau",
+      "category": "barang_rusak",
+      "team": "retur",
+      "priority": "P2",
+      "revision": 1,
+      "created_at": "2026-10-16T02:30:54.465304+00:00",
+      "updated_at": "2026-10-16T03:30:54.465304+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "barang_rusak",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "retur",
+        "suggested_priority": "P2",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "6ffa85815b924ec8b5b2b4620ef49e86",
+          "ticket_id": "9655646b3053478aa6c7bc788bd670c8",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Minta foto kerusakan, kemasan, dan nomor pesanan. Operator memeriksa bukti sebelum menyetujui retur. Jangan menyatakan pengembalian dana sudah diproses. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-RUSAK-01",
+              "version": 1,
+              "title": "Laporan barang rusak",
+              "body": "Minta foto kerusakan, kemasan, dan nomor pesanan. Operator memeriksa bukti sebelum menyetujui retur. Jangan menyatakan pengembalian dana sudah diproses."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "draft",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.470038+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "d2111ab292b74e71b96f5a82c21e724d",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.470038+00:00"
+        }
+      ],
+      "order": {
+        "simulated": true,
+        "status": "delivered",
+        "payment_status": "paid",
+        "overdue_hours": 0,
+        "item": "Pesanan contoh 1"
+      }
+    },
+    {
+      "id": "a4d625e346bc47e891773b48a6342c6a",
+      "number": 1031,
+      "subject": "Bukti transfer belum terkonfirmasi",
+      "message": "Saya transfer tadi pagi tetapi pembayaran masih menunggu. Mohon bantu verifikasi transaksinya.",
+      "customer": "Rama Wijaya",
+      "order_code": null,
+      "status": "baru",
+      "category": "pembayaran",
+      "team": "billing",
+      "priority": "P3",
+      "revision": 1,
+      "created_at": "2026-10-14T17:30:54.493590+00:00",
+      "updated_at": "2026-10-16T03:30:54.493590+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "pembayaran",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "billing",
+        "suggested_priority": "P3",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "26571fec9a9a47f0851a01fca8c4f1ca",
+          "ticket_id": "a4d625e346bc47e891773b48a6342c6a",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Jika data pesanan simulasi membuktikan dana terpotong dan status pesanan gagal, tandai prioritas P1 untuk billing. Minta nomor pesanan dan referensi transaksi yang sudah disamarkan. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-BAYAR-01",
+              "version": 1,
+              "title": "Dana terpotong, pesanan gagal",
+              "body": "Jika data pesanan simulasi membuktikan dana terpotong dan status pesanan gagal, tandai prioritas P1 untuk billing. Minta nomor pesanan dan referensi transaksi yang sudah disamarkan."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "draft",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.493590+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "60b8b17d795b4ed6b14c43af5c7d9368",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.493590+00:00"
+        }
+      ],
+      "order": null
+    },
+    {
+      "id": "9bcaef6a1f9c47229fbc347fa975e72a",
+      "number": 1032,
+      "subject": "Nomor resi belum muncul",
+      "message": "Pesanan saya sudah diproses kemarin, tapi nomor resinya belum muncul. Apakah bisa dicek?",
+      "customer": "Putri Ananda",
+      "order_code": null,
+      "status": "disetujui",
+      "category": "status_pengiriman",
+      "team": "logistik",
+      "priority": "P3",
+      "revision": 1,
+      "created_at": "2026-10-14T20:30:54.491528+00:00",
+      "updated_at": "2026-10-16T03:30:54.492113+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "status_pengiriman",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "logistik",
+        "suggested_priority": "P3",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "f5374f99e6dd4712bde18872683432f7",
+          "ticket_id": "9bcaef6a1f9c47229fbc347fa975e72a",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Periksa nomor pesanan dan status pengiriman sebelum menjawab. Bila nomor pesanan belum tersedia, minta nomor pesanan. Jangan mengarang nomor resi atau posisi paket. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-KIRIM-01",
+              "version": 1,
+              "title": "Lacak perjalanan pesanan",
+              "body": "Periksa nomor pesanan dan status pengiriman sebelum menjawab. Bila nomor pesanan belum tersedia, minta nomor pesanan. Jangan mengarang nomor resi atau posisi paket."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "approved",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.493590+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "365d3d06044842da845dba5d6bd01df0",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.493590+00:00"
+        }
+      ],
+      "order": null
+    },
+    {
+      "id": "36a0322b18674f0b9c7128f200afccbb",
+      "number": 1033,
+      "subject": "Perubahan alamat sebelum dikirim",
+      "message": "Saya ingin mengganti alamat pesanan karena salah pilih alamat kantor. Pesanannya belum dikirim.",
+      "customer": "Arif Hidayat",
+      "order_code": null,
+      "status": "selesai",
+      "category": "pembatalan",
+      "team": "customer_care",
+      "priority": "P3",
+      "revision": 1,
+      "created_at": "2026-10-14T23:30:54.486874+00:00",
+      "updated_at": "2026-10-16T03:30:54.487563+00:00",
+      "resolved_at": "2026-10-16T03:30:54.486874+00:00",
+      "analysis": {
+        "category": "pembatalan",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "customer_care",
+        "suggested_priority": "P3",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "f50d6e09e2c74aa6b4110d39c7de0b36",
+          "ticket_id": "36a0322b18674f0b9c7128f200afccbb",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Periksa status pesanan. Pembatalan pesanan yang belum dikirim perlu persetujuan operator. Jangan menyatakan pesanan sudah dibatalkan. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-BATAL-01",
+              "version": 1,
+              "title": "Permintaan pembatalan",
+              "body": "Periksa status pesanan. Pembatalan pesanan yang belum dikirim perlu persetujuan operator. Jangan menyatakan pesanan sudah dibatalkan."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "approved",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.492113+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "342e41ac158645748e46fc54d50c6d8f",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.492113+00:00"
+        }
+      ],
+      "order": null
+    },
+    {
+      "id": "14e8fb6039fb47d7ac0d8788abd3fa21",
+      "number": 1035,
+      "subject": "Minta bantuan untuk pesanan",
+      "message": "Halo kak, saya mau bertanya tentang pesanan saya. Bisa bantu?",
+      "customer": "Bagas Aditya",
+      "order_code": null,
+      "status": "baru",
+      "category": "lainnya",
+      "team": "customer_care",
+      "priority": "P3",
+      "revision": 1,
+      "created_at": "2026-10-15T05:30:54.481546+00:00",
+      "updated_at": "2026-10-16T03:30:54.481546+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "lainnya",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "customer_care",
+        "suggested_priority": "P3",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "8fcf10f156ff4e139132c5eb20a63448",
+          "ticket_id": "14e8fb6039fb47d7ac0d8788abd3fa21",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Jika masalah belum jelas, minta pelanggan menjelaskan kendala utama dan nomor pesanan bila berkaitan dengan pembelian. Tandai untuk pemeriksaan operator. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-UMUM-01",
+              "version": 1,
+              "title": "Informasi belum cukup",
+              "body": "Jika masalah belum jelas, minta pelanggan menjelaskan kendala utama dan nomor pesanan bila berkaitan dengan pembelian. Tandai untuk pemeriksaan operator."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "draft",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.485561+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "bdc77815bed54f87a219ddbf1522ecfa",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.485561+00:00"
+        }
+      ],
+      "order": null
+    },
+    {
+      "id": "7088550920254d04814ae819dfcbd932",
+      "number": 1036,
+      "subject": "Tidak bisa masuk ke akun",
+      "message": "Saya sudah mencoba login beberapa kali tetapi selalu gagal. Emailnya masih aktif. Bagaimana memulihkan akun saya?",
+      "customer": "Maya Lestari",
+      "order_code": null,
+      "status": "selesai",
+      "category": "akun",
+      "team": "customer_care",
+      "priority": "P3",
+      "revision": 1,
+      "created_at": "2026-10-15T08:30:54.478611+00:00",
+      "updated_at": "2026-10-16T03:30:54.479797+00:00",
+      "resolved_at": "2026-10-16T03:30:54.478611+00:00",
+      "analysis": {
+        "category": "akun",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "customer_care",
+        "suggested_priority": "P3",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "35453fa2f7044b1d857f58f0e23f0afb",
+          "ticket_id": "7088550920254d04814ae819dfcbd932",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Arahkan pengguna memakai fitur lupa kata sandi pada situs toko. Jangan meminta kata sandi atau OTP. Jika akses tetap bermasalah, eskalasi ke customer care. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-AKUN-01",
+              "version": 1,
+              "title": "Kesulitan masuk akun",
+              "body": "Arahkan pengguna memakai fitur lupa kata sandi pada situs toko. Jangan meminta kata sandi atau OTP. Jika akses tetap bermasalah, eskalasi ke customer care."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "approved",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.481546+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "c486d53db93b41b2ab855ca4f34c5fc3",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.481546+00:00"
+        }
+      ],
+      "order": null
+    },
+    {
+      "id": "526edcd4bd304f44aaaf23a36b907889",
+      "number": 1037,
+      "subject": "Ingin membatalkan pesanan",
+      "message": "Kak, saya salah pilih ukuran. Pesanan belum dikirim, apakah masih bisa dibatalkan?",
+      "customer": "Fajar Maulana",
+      "order_code": "DEMO-1006",
+      "status": "baru",
+      "category": "pembatalan",
+      "team": "customer_care",
+      "priority": "P3",
+      "revision": 1,
+      "created_at": "2026-10-15T11:30:54.476341+00:00",
+      "updated_at": "2026-10-16T03:30:54.476341+00:00",
+      "resolved_at": null,
+      "analysis": {
+        "category": "pembatalan",
+        "score": null,
+        "calibration": "not_applicable",
+        "needs_review": true,
+        "classifier_version": "curated-scenario-v1",
+        "source": "stored_example",
+        "suggested_team": "customer_care",
+        "suggested_priority": "P3",
+        "priority_reason": "Contoh prioritas yang ditetapkan dalam skenario demo."
+      },
+      "analysis_revision": 1,
+      "job": null,
+      "drafts": [
+        {
+          "id": "c1b197d80a9b4a3094c6d63a283209ba",
+          "ticket_id": "526edcd4bd304f44aaaf23a36b907889",
+          "revision": 1,
+          "body": "Terima kasih sudah menghubungi kami. Periksa status pesanan. Pembatalan pesanan yang belum dikirim perlu persetujuan operator. Jangan menyatakan pesanan sudah dibatalkan. Kami akan membantu memeriksa informasi yang tersedia sebelum menentukan langkah selanjutnya.",
+          "source": "stored_example",
+          "policy_refs": [
+            {
+              "id": "POL-BATAL-01",
+              "version": 1,
+              "title": "Permintaan pembatalan",
+              "body": "Periksa status pesanan. Pembatalan pesanan yang belum dikirim perlu persetujuan operator. Jangan menyatakan pesanan sudah dibatalkan."
+            }
+          ],
+          "missing_information": [],
+          "review_flags": [],
+          "status": "draft",
+          "version": 1,
+          "model_version": "curated-scenario-v1",
+          "created_at": "2026-10-16T03:30:54.479292+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": "5140dba077844a96ab908623ca884464",
+          "action": "Contoh tiket dimuat",
+          "detail": {
+            "simulated": true
+          },
+          "created_at": "2026-10-16T03:30:54.479292+00:00"
+        }
+      ],
+      "order": {
+        "simulated": true,
+        "status": "processing",
+        "payment_status": "paid",
+        "overdue_hours": 0,
+        "item": "Pesanan contoh 6"
+      }
+    }
+  ],
+  "policies": [
+    {
+      "id": "POL-AKUN-01",
+      "title": "Kesulitan masuk akun",
+      "body": "Arahkan pengguna memakai fitur lupa kata sandi pada situs toko. Jangan meminta kata sandi atau OTP. Jika akses tetap bermasalah, eskalasi ke customer care.",
+      "category": "akun",
+      "version": 1
+    },
+    {
+      "id": "POL-AKUN-02",
+      "title": "Perubahan informasi akun",
+      "body": "Perubahan email dan nomor telepon membutuhkan verifikasi melalui kanal resmi toko. Draf tidak boleh menyatakan perubahan telah dilakukan.",
+      "category": "akun",
+      "version": 1
+    },
+    {
+      "id": "POL-AKUN-03",
+      "title": "Aktivitas akun tidak dikenal",
+      "body": "Minta pengguna mengganti kata sandi melalui kanal resmi dan hubungi customer care. Jangan meminta pengguna membagikan kode keamanan.",
+      "category": "akun",
+      "version": 1
+    },
+    {
+      "id": "POL-BATAL-01",
+      "title": "Permintaan pembatalan",
+      "body": "Periksa status pesanan. Pembatalan pesanan yang belum dikirim perlu persetujuan operator. Jangan menyatakan pesanan sudah dibatalkan.",
+      "category": "pembatalan",
+      "version": 1
+    },
+    {
+      "id": "POL-BATAL-02",
+      "title": "Pesanan yang telah dikirim",
+      "body": "Jika pesanan telah dikirim, pembatalan langsung belum dapat dipastikan. Operator menjelaskan opsi berdasarkan kondisi pesanan dan kebijakan retur.",
+      "category": "pembatalan",
+      "version": 1
+    },
+    {
+      "id": "POL-BATAL-03",
+      "title": "Perubahan pesanan",
+      "body": "Perubahan alamat atau item memerlukan pemeriksaan status pemrosesan. Minta nomor pesanan dan perubahan yang diinginkan tanpa meminta data pembayaran rahasia.",
+      "category": "pembatalan",
+      "version": 1
+    },
+    {
+      "id": "POL-BAYAR-01",
+      "title": "Dana terpotong, pesanan gagal",
+      "body": "Jika data pesanan simulasi membuktikan dana terpotong dan status pesanan gagal, tandai prioritas P1 untuk billing. Minta nomor pesanan dan referensi transaksi yang sudah disamarkan.",
+      "category": "pembayaran",
+      "version": 1
+    },
+    {
+      "id": "POL-BAYAR-02",
+      "title": "Verifikasi pembayaran",
+      "body": "Jangan meminta PIN, OTP, kata sandi, CVV, atau nomor kartu lengkap. Jika bukti bayar diperlukan, minta pelanggan menyamarkan informasi sensitif.",
+      "category": "pembayaran",
+      "version": 1
+    },
+    {
+      "id": "POL-BAYAR-03",
+      "title": "Pembayaran belum terkonfirmasi",
+      "body": "Tim billing harus memeriksa status transaksi. Draf tidak dapat memastikan pembayaran berhasil atau dana dikembalikan tanpa data yang mendukung.",
+      "category": "pembayaran",
+      "version": 1
+    },
+    {
+      "id": "POL-KIRIM-01",
+      "title": "Lacak perjalanan pesanan",
+      "body": "Periksa nomor pesanan dan status pengiriman sebelum menjawab. Bila nomor pesanan belum tersedia, minta nomor pesanan. Jangan mengarang nomor resi atau posisi paket.",
+      "category": "status_pengiriman",
+      "version": 1
+    },
+    {
+      "id": "POL-KIRIM-02",
+      "title": "Keterlambatan pengiriman",
+      "body": "Tanggal perkiraan adalah estimasi. Jika data pesanan menunjukkan keterlambatan lebih dari 48 jam dari estimasi, eskalasi ke tim logistik dengan prioritas P1. Jangan menjanjikan tanggal tiba baru tanpa konfirmasi.",
+      "category": "status_pengiriman",
+      "version": 1
+    },
+    {
+      "id": "POL-KIRIM-03",
+      "title": "Paket berstatus diterima",
+      "body": "Jika pelanggan belum menerima paket meski status diterima, minta konfirmasi penerima dan eskalasi ke logistik. Jangan menyatakan paket hilang sebelum pemeriksaan.",
+      "category": "status_pengiriman",
+      "version": 1
+    },
+    {
+      "id": "POL-RETUR-01",
+      "title": "Persyaratan pengajuan retur",
+      "body": "Minta nomor pesanan, alasan retur, dan kondisi barang. Tim retur akan memeriksa kelayakan permintaan berdasarkan bukti dan kebijakan toko simulasi.",
+      "category": "retur_refund",
+      "version": 1
+    },
+    {
+      "id": "POL-RETUR-02",
+      "title": "Status pengembalian dana",
+      "body": "Status pengembalian dana hanya boleh disebut jika tersedia pada data pesanan. Jika belum tersedia, sampaikan bahwa operator perlu memeriksa; jangan memberi tanggal pencairan pasti.",
+      "category": "retur_refund",
+      "version": 1
+    },
+    {
+      "id": "POL-RETUR-03",
+      "title": "Langkah sebelum mengirim retur",
+      "body": "Pelanggan menunggu instruksi alamat dan nomor pengajuan dari operator sebelum mengirim barang. Sistem AI tidak membuat persetujuan retur.",
+      "category": "retur_refund",
+      "version": 1
+    },
+    {
+      "id": "POL-RUSAK-01",
+      "title": "Laporan barang rusak",
+      "body": "Minta foto kerusakan, kemasan, dan nomor pesanan. Operator memeriksa bukti sebelum menyetujui retur. Jangan menyatakan pengembalian dana sudah diproses.",
+      "category": "barang_rusak",
+      "version": 1
+    },
+    {
+      "id": "POL-RUSAK-02",
+      "title": "Batas pelaporan kerusakan",
+      "body": "Dalam kebijakan toko simulasi ini, laporan kerusakan diajukan paling lambat tujuh hari setelah barang diterima. Jika tanggal penerimaan belum diketahui, minta informasi tambahan.",
+      "category": "barang_rusak",
+      "version": 1
+    },
+    {
+      "id": "POL-RUSAK-03",
+      "title": "Keputusan penanganan kerusakan",
+      "body": "Tim retur memeriksa apakah penggantian atau pengembalian sesuai kebijakan. Draf hanya menjelaskan langkah pemeriksaan dan tidak menyetujui transaksi.",
+      "category": "barang_rusak",
+      "version": 1
+    },
+    {
+      "id": "POL-SESUAI-01",
+      "title": "Varian atau barang berbeda",
+      "body": "Minta foto barang, label kemasan, dan rincian barang yang dipesan. Cocokkan warna, ukuran, serta jumlah dengan data pesanan sebelum menilai ketidaksesuaian.",
+      "category": "barang_tidak_sesuai",
+      "version": 1
+    },
+    {
+      "id": "POL-SESUAI-02",
+      "title": "Kekurangan isi paket",
+      "body": "Minta foto isi paket dan daftar item yang belum diterima. Tim retur memverifikasi pengemasan. Jangan menjanjikan pengiriman ulang sebelum pemeriksaan.",
+      "category": "barang_tidak_sesuai",
+      "version": 1
+    },
+    {
+      "id": "POL-SESUAI-03",
+      "title": "Ongkos retur ketidaksesuaian",
+      "body": "Ongkos retur ditentukan setelah kesalahan pengiriman terverifikasi. Jangan meminta pelanggan membayar atau menjanjikan penggantian biaya sebelum keputusan operator.",
+      "category": "barang_tidak_sesuai",
+      "version": 1
+    },
+    {
+      "id": "POL-UMUM-01",
+      "title": "Informasi belum cukup",
+      "body": "Jika masalah belum jelas, minta pelanggan menjelaskan kendala utama dan nomor pesanan bila berkaitan dengan pembelian. Tandai untuk pemeriksaan operator.",
+      "category": "lainnya",
+      "version": 1
+    },
+    {
+      "id": "POL-UMUM-02",
+      "title": "Lebih dari satu masalah",
+      "body": "Jika ada beberapa permintaan yang tidak dapat dipisahkan, minta operator menentukan kebutuhan utama. Jangan membuat keputusan transaksi otomatis.",
+      "category": "lainnya",
+      "version": 1
+    },
+    {
+      "id": "POL-UMUM-03",
+      "title": "Batas layanan demo",
+      "body": "Seluruh nama, pesanan, dan kebijakan dalam demo adalah simulasi. Operator meninjau semua draf sebelum persetujuan dalam aplikasi. Tidak ada pesan eksternal yang dikirim.",
+      "category": "lainnya",
+      "version": 1
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "tfidf-bootstrap-v1",
+      "model": "TF-IDF word + char · baseline",
+      "dataset_version": "ticketops-synthetic-bootstrap-v1",
+      "synthetic": true,
+      "reviewed_by_human": false,
+      "test_count": 320,
+      "test_family_count": 64,
+      "macro_f1": 0.7685205887787991,
+      "accuracy": 0.778125,
+      "latency_p50_ms": 3.5219000001234235,
+      "latency_p95_ms": 6.357030000344821,
+      "labels": [
+        "akun",
+        "barang_rusak",
+        "barang_tidak_sesuai",
+        "lainnya",
+        "pembatalan",
+        "pembayaran",
+        "retur_refund",
+        "status_pengiriman"
+      ],
+      "confusion_matrix": [
+        [
+          40,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          15,
+          0,
+          0,
+          0,
+          5,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          30,
+          2,
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          4,
+          31,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          33,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0,
+          35,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          5,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          35
+        ]
+      ],
+      "per_class": {
+        "akun": {
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1-score": 0.8888888888888888,
+          "support": 40.0
+        },
+        "barang_rusak": {
+          "precision": 1.0,
+          "recall": 0.375,
+          "f1-score": 0.5454545454545454,
+          "support": 40.0
+        },
+        "barang_tidak_sesuai": {
+          "precision": 0.6818181818181818,
+          "recall": 0.75,
+          "f1-score": 0.7142857142857143,
+          "support": 40.0
+        },
+        "lainnya": {
+          "precision": 0.8857142857142857,
+          "recall": 0.775,
+          "f1-score": 0.8266666666666667,
+          "support": 40.0
+        },
+        "pembatalan": {
+          "precision": 0.7674418604651163,
+          "recall": 0.825,
+          "f1-score": 0.7951807228915663,
+          "support": 40.0
+        },
+        "pembayaran": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 40.0
+        },
+        "retur_refund": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 40.0
+        },
+        "status_pengiriman": {
+          "precision": 0.660377358490566,
+          "recall": 0.875,
+          "f1-score": 0.7526881720430108,
+          "support": 40.0
+        },
+        "accuracy": 0.778125,
+        "macro avg": {
+          "precision": 0.8025439608110188,
+          "recall": 0.778125,
+          "f1-score": 0.7685205887787991,
+          "support": 320.0
+        },
+        "weighted avg": {
+          "precision": 0.8025439608110186,
+          "recall": 0.778125,
+          "f1-score": 0.768520588778799,
+          "support": 320.0
+        }
+      },
+      "errors": [
+        {
+          "text": "Mohon bantu, Baut kursi patah sehingga tidak bisa dirakit tolong bantu saya.",
+          "expected": "barang_rusak",
+          "predicted": "akun"
+        },
+        {
+          "text": "Permisi, Tolong periksa perkembangan uang pengganti pesanan saya tolong bantu saya.",
+          "expected": "retur_refund",
+          "predicted": "pembatalan"
+        },
+        {
+          "text": "Halo kak, Nominal refund yang tercatat berbeda dari harga bayar mohon dicek.",
+          "expected": "retur_refund",
+          "predicted": "barang_tidak_sesuai"
+        },
+        {
+          "text": "Permisi, Monitor baru bergaris tidak bisa menampilkan gambar tolong bantu saya.",
+          "expected": "barang_rusak",
+          "predicted": "akun"
+        },
+        {
+          "text": "Halo kak, Saya belum punya pesanan hanya ingin menanyakan katalog",
+          "expected": "lainnya",
+          "predicted": "pembatalan"
+        },
+        {
+          "text": "Mohon bantu, Tolong periksa perkembangan uang pengganti pesanan saya mohon dicek.",
+          "expected": "retur_refund",
+          "predicted": "pembatalan"
+        },
+        {
+          "text": "Kak, Saya terlanjur beli ingin urungkan pembelian Terima kasih.",
+          "expected": "pembatalan",
+          "predicted": "retur_refund"
+        },
+        {
+          "text": "Permisi, Mangkuk porselen remuk di kardus pengiriman tolong bantu saya.",
+          "expected": "barang_rusak",
+          "predicted": "status_pengiriman"
+        },
+        {
+          "text": "Mohon bantu, Baut kursi patah sehingga tidak bisa dirakit Terima kasih.",
+          "expected": "barang_rusak",
+          "predicted": "akun"
+        },
+        {
+          "text": "Kak, Mangkuk porselen remuk di kardus pengiriman ya.",
+          "expected": "barang_rusak",
+          "predicted": "status_pengiriman"
+        },
+        {
+          "text": "Harusnya jaket perempuan malah dikirim jaket anak mohon dicek.",
+          "expected": "barang_tidak_sesuai",
+          "predicted": "status_pengiriman"
+        },
+        {
+          "text": "Halo kak, Informasi resi menunjukkan alamat tidak ditemukan",
+          "expected": "status_pengiriman",
+          "predicted": "retur_refund"
+        },
+        {
+          "text": "Permisi, Harusnya jaket perempuan malah dikirim jaket anak tolong bantu saya.",
+          "expected": "barang_tidak_sesuai",
+          "predicted": "lainnya"
+        },
+        {
+          "text": "Mohon bantu, Informasi resi menunjukkan alamat tidak ditemukan mohon dicek.",
+          "expected": "status_pengiriman",
+          "predicted": "retur_refund"
+        },
+        {
+          "text": "Mohon bantu, Kena dua debit identik untuk barang yang sama tolong bantu saya.",
+          "expected": "pembayaran",
+          "predicted": "barang_tidak_sesuai"
+        },
+        {
+          "text": "Permisi, Lampu pesanan tidak menyala meski sudah diganti colokan Terima kasih.",
+          "expected": "barang_rusak",
+          "predicted": "pembayaran"
+        },
+        {
+          "text": "Baut kursi patah sehingga tidak bisa dirakit ya.",
+          "expected": "barang_rusak",
+          "predicted": "akun"
+        },
+        {
+          "text": "Halo kak, Tolong periksa perkembangan uang pengganti pesanan saya mohon dicek.",
+          "expected": "retur_refund",
+          "predicted": "pembatalan"
+        },
+        {
+          "text": "Halo kak, Harusnya jaket perempuan malah dikirim jaket anak tolong bantu saya.",
+          "expected": "barang_tidak_sesuai",
+          "predicted": "lainnya"
+        },
+        {
+          "text": "Mohon bantu, Saya belum punya pesanan hanya ingin menanyakan katalog",
+          "expected": "lainnya",
+          "predicted": "pembatalan"
+        }
+      ],
+      "created_at": "2026-10-16T03:27:00.175421+00:00",
+      "notes": [
+        "Semua contoh dibuat secara sintetis oleh coding agent dan belum ditinjau manusia.",
+        "Split dipisahkan berdasarkan keluarga skenario sebelum augmentasi. Variasi dalam satu keluarga saling berkorelasi.",
+        "Test memuat 64 keluarga skenario independen; 320 baris bukan 320 skenario independen.",
+        "Hyperparameter dipilih di development; kalibrasi memakai split terpisah. Test hanya digunakan setelah konfigurasi dipilih.",
+        "IndoBERT dan pembanding Qwen belum dimasukkan sebelum training atau benchmark benar-benar dijalankan."
+      ],
+      "host": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "id": "tfidf-calibrated-v1",
+      "model": "TF-IDF word + char · sigmoid",
+      "dataset_version": "ticketops-synthetic-bootstrap-v1",
+      "synthetic": true,
+      "reviewed_by_human": false,
+      "test_count": 320,
+      "test_family_count": 64,
+      "macro_f1": 0.7442366542910435,
+      "accuracy": 0.753125,
+      "latency_p50_ms": 6.354950000059034,
+      "latency_p95_ms": 12.975545000063024,
+      "labels": [
+        "akun",
+        "barang_rusak",
+        "barang_tidak_sesuai",
+        "lainnya",
+        "pembatalan",
+        "pembayaran",
+        "retur_refund",
+        "status_pengiriman"
+      ],
+      "confusion_matrix": [
+        [
+          37,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          15,
+          0,
+          0,
+          0,
+          5,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          30,
+          2,
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          3,
+          32,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          30,
+          3,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0,
+          35,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          5,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          5,
+          32
+        ]
+      ],
+      "per_class": {
+        "akun": {
+          "precision": 0.7872340425531915,
+          "recall": 0.925,
+          "f1-score": 0.8505747126436781,
+          "support": 40.0
+        },
+        "barang_rusak": {
+          "precision": 1.0,
+          "recall": 0.375,
+          "f1-score": 0.5454545454545454,
+          "support": 40.0
+        },
+        "barang_tidak_sesuai": {
+          "precision": 0.6976744186046512,
+          "recall": 0.75,
+          "f1-score": 0.7228915662650602,
+          "support": 40.0
+        },
+        "lainnya": {
+          "precision": 0.7619047619047619,
+          "recall": 0.8,
+          "f1-score": 0.7804878048780488,
+          "support": 40.0
+        },
+        "pembatalan": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 40.0
+        },
+        "pembayaran": {
+          "precision": 0.813953488372093,
+          "recall": 0.875,
+          "f1-score": 0.8433734939759037,
+          "support": 40.0
+        },
+        "retur_refund": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 40.0
+        },
+        "status_pengiriman": {
+          "precision": 0.64,
+          "recall": 0.8,
+          "f1-score": 0.7111111111111111,
+          "support": 40.0
+        },
+        "accuracy": 0.753125,
+        "macro avg": {
+          "precision": 0.7750958389293372,
+          "recall": 0.753125,
+          "f1-score": 0.7442366542910435,
+          "support": 320.0
+        },
+        "weighted avg": {
+          "precision": 0.7750958389293372,
+          "recall": 0.753125,
+          "f1-score": 0.7442366542910435,
+          "support": 320.0
+        }
+      },
+      "errors": [
+        {
+          "text": "Mohon bantu, Baut kursi patah sehingga tidak bisa dirakit tolong bantu saya.",
+          "expected": "barang_rusak",
+          "predicted": "akun"
+        },
+        {
+          "text": "Permisi, Tolong periksa perkembangan uang pengganti pesanan saya tolong bantu saya.",
+          "expected": "retur_refund",
+          "predicted": "pembatalan"
+        },
+        {
+          "text": "Halo kak, Nominal refund yang tercatat berbeda dari harga bayar mohon dicek.",
+          "expected": "retur_refund",
+          "predicted": "barang_tidak_sesuai"
+        },
+        {
+          "text": "Permisi, Monitor baru bergaris tidak bisa menampilkan gambar tolong bantu saya.",
+          "expected": "barang_rusak",
+          "predicted": "akun"
+        },
+        {
+          "text": "Halo kak, Saya belum punya pesanan hanya ingin menanyakan katalog",
+          "expected": "lainnya",
+          "predicted": "pembatalan"
+        },
+        {
+          "text": "Mohon bantu, Tolong periksa perkembangan uang pengganti pesanan saya mohon dicek.",
+          "expected": "retur_refund",
+          "predicted": "pembatalan"
+        },
+        {
+          "text": "Kak, Saya terlanjur beli ingin urungkan pembelian Terima kasih.",
+          "expected": "pembatalan",
+          "predicted": "retur_refund"
+        },
+        {
+          "text": "Halo kak, Akun ditangguhkan tanpa saya tahu sebabnya Terima kasih.",
+          "expected": "akun",
+          "predicted": "lainnya"
+        },
+        {
+          "text": "Permisi, Mangkuk porselen remuk di kardus pengiriman tolong bantu saya.",
+          "expected": "barang_rusak",
+          "predicted": "status_pengiriman"
+        },
+        {
+          "text": "Permisi, Akun ditangguhkan tanpa saya tahu sebabnya tolong bantu saya.",
+          "expected": "akun",
+          "predicted": "lainnya"
+        },
+        {
+          "text": "Mohon bantu, Baut kursi patah sehingga tidak bisa dirakit Terima kasih.",
+          "expected": "barang_rusak",
+          "predicted": "akun"
+        },
+        {
+          "text": "Kak, Mangkuk porselen remuk di kardus pengiriman ya.",
+          "expected": "barang_rusak",
+          "predicted": "status_pengiriman"
+        },
+        {
+          "text": "Harusnya jaket perempuan malah dikirim jaket anak mohon dicek.",
+          "expected": "barang_tidak_sesuai",
+          "predicted": "status_pengiriman"
+        },
+        {
+          "text": "Halo kak, Informasi resi menunjukkan alamat tidak ditemukan",
+          "expected": "status_pengiriman",
+          "predicted": "retur_refund"
+        },
+        {
+          "text": "Permisi, Kirimannya muter balik ke gudang penjual tolong bantu saya.",
+          "expected": "status_pengiriman",
+          "predicted": "lainnya"
+        },
+        {
+          "text": "Permisi, Harusnya jaket perempuan malah dikirim jaket anak tolong bantu saya.",
+          "expected": "barang_tidak_sesuai",
+          "predicted": "lainnya"
+        },
+        {
+          "text": "Mohon bantu, Informasi resi menunjukkan alamat tidak ditemukan mohon dicek.",
+          "expected": "status_pengiriman",
+          "predicted": "retur_refund"
+        },
+        {
+          "text": "Saya checkout tidak sengaja tolong stop pengemasannya mohon dicek.",
+          "expected": "pembatalan",
+          "predicted": "pembayaran"
+        },
+        {
+          "text": "Mohon bantu, Kena dua debit identik untuk barang yang sama tolong bantu saya.",
+          "expected": "pembayaran",
+          "predicted": "barang_tidak_sesuai"
+        },
+        {
+          "text": "Permisi, Lampu pesanan tidak menyala meski sudah diganti colokan Terima kasih.",
+          "expected": "barang_rusak",
+          "predicted": "pembayaran"
+        }
+      ],
+      "created_at": "2026-10-16T03:27:03.201666+00:00",
+      "notes": [
+        "Semua contoh dibuat secara sintetis oleh coding agent dan belum ditinjau manusia.",
+        "Split dipisahkan berdasarkan keluarga skenario sebelum augmentasi. Variasi dalam satu keluarga saling berkorelasi.",
+        "Test memuat 64 keluarga skenario independen; 320 baris bukan 320 skenario independen.",
+        "Hyperparameter dipilih di development; kalibrasi memakai split terpisah. Test hanya digunakan setelah konfigurasi dipilih.",
+        "IndoBERT dan pembanding Qwen belum dimasukkan sebelum training atau benchmark benar-benar dijalankan."
+      ],
+      "host": "Windows-11-10.0.26200-SP0"
+    }
+  ]
+}
